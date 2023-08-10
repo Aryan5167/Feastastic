@@ -119,7 +119,7 @@ justify-content:space-between;
 padding:0 3rem;
 z-index:3;
 background:var(--accent);
-
+ 
 
  @media only screen and (max-width:1040px){
   ${'' /* flex-direction:column;
