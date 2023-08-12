@@ -1,0 +1,40 @@
+.featured-recipes{
+    background-color: var(--secondary);
+    padding: 40px 0;
+
+}
+
+.featured-title{
+    font-family: 'Playfair Display', serif;
+    color: #3B4236;
+    text-align: center;
+    font-size:2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+
+
+.featured-grid{
+    display: grid;
+    grid-template-columns:repeat(4,minmax(200px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+    .featured-grid {
+      grid-template-columns: repeat(2, minmax(0,1fr)); 
+      gap:10px;
+      margin: 0 10px;
+      
+    }
+
+  }
+
+@media (max-width: 480px) {
+    .featured-grid {
+      grid-template-columns: 1fr; 
+    }
+  }

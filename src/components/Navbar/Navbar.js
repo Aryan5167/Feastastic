@@ -128,6 +128,8 @@ background:var(--accent);
   height:100vh;
   width:100vw;
   overflow-y:hidden; */}
+  height:12vh;
+  align-items:center;
   position:relative;
   width:100%;
   ${'' /* overflow-x:hidden; */}

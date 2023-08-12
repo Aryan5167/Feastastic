@@ -2,8 +2,9 @@ import React from 'react'
 import "./Hero.scss"
 
 function Hero() {
+
   return (
-    <section className="hero-container">
+    <section className="hero-container"  >
         
         <div className="hero-content">
             <div className="hero-image" style={{backgroundImage:`url("../images/cup.jpg")`}}>
