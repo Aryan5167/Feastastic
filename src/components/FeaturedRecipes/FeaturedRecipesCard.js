@@ -12,10 +12,12 @@ function FeaturedRecipesCard(props) {
         <span className="heart-icon">&#x2665;</span>
         <span className="like-count">{props.likes}</span>
       </div>
-      <button className="view-recipe-button">
-      <a href="/">View Recipe</a> 
+      <a href="/">
+      <button className="view-recipe-button">View Recipe</button>
+      </a>
       
-      </button>
+    
+    
      
    </div>
   )
