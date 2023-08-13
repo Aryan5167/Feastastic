@@ -12,7 +12,8 @@ $bp-lg: 800px;
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: whitesmoke;
+  // color: whitesmoke;
+  color:#F6F2EC;
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
     0 2px 2px rgba(0,0,0,0.1), 
@@ -86,14 +87,14 @@ $bp-lg: 800px;
   padding: 1rem;
   transition: transform var(--d) var(--e);
   z-index: 1;
-  > * + * {
-    margin-top: 1rem;
-  }
+  // > * + * {
+  //   margin-top: 1rem;
+  // }
 }
 
 .meal-type-title{
     font-size: 6 rem;
-  font-weight: bold;
+  font-weight:bold;
   line-height: 1.2;
 }
 
@@ -108,16 +109,18 @@ $bp-lg: 800px;
     cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
+  font-family: "Lora",serif;
   font-size: 0.65rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: var(--secondary);
+  background-color: var(--accent);
+  // background-color: black;
   border: none;
   
   &:hover {
-    background-color: lighten(black, 5%);
+    background-color: lighten(#EE614B, 5%);
   }
   
   &:focus {
@@ -135,7 +138,7 @@ $bp-lg: 800px;
     .meal-type-card-content {
       transform: translateY(calc(100% - 4.5rem));
       
-      > *:not(.title) {
+      > *:not(.meal-type-title) {
         opacity: 0;
         transform: translateY(1rem);
         transition:
