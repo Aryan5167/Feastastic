@@ -16,7 +16,8 @@ function FeaturedRecipes() {
                desc={recipe.description}
                chef={recipe.chef}
                likes={recipe.likes}
-             
+              
+            
               />)
            
         })}

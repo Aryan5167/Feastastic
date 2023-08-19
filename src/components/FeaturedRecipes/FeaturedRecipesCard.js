@@ -2,8 +2,10 @@ import React from 'react'
 import './FeaturedRecipesCard.scss'
 
 function FeaturedRecipesCard(props) {
+  const isNew=props.isNew;
   return (
    <div className="featured-recipe-card">
+   { isNew && <span className="new-badge">New</span>}
      <img src="/images/pasta.jpg" alt="" />
      <h3 className="featured-recipe-title">{props.title}</h3>
      <p className="featured-recipe-description">{props.desc}</p>

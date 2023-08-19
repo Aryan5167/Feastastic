@@ -21,44 +21,6 @@ function Navbar() {
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
          </div>
       
-       {/* <NavMenu>
-       <NavLinkItem>
-         <NavLink to="/" >
-           <span>Home</span>
-         </NavLink>
-       </NavLinkItem>
-
-       <NavLinkItem>
-          <NavLink  to="/" >
-           <span>My Recipes</span>
-         </NavLink>
-       </NavLinkItem>
-       <NavLinkItem>
-       <NavLink to="/" >
-           <span>Cuisines</span>
-         </NavLink>
-       </NavLinkItem>
-       <NavLinkItem>
-       <NavLink to="/" >
-           <span>Meal Types</span>
-         </NavLink>
-       </NavLinkItem>
-       <NavLinkItem>
-       <NavLink to="/" >
-           <span>All Recipes</span>
-         </NavLink>
-       </NavLinkItem>
-         
-       <SearchBar>
-          
-          <input type="text" placeholder='Search Recipes...' />
-          <SearchButton>
-          <img src="/images/search.svg" style={{}}/>
-          Search
-          </SearchButton>
-       </SearchBar>
-         
-       </NavMenu> */}
 
        <ul className={click ? "nav-menu active" : "nav-menu"}>
          <li>
@@ -109,6 +71,7 @@ function Navbar() {
 const Nav=styled.nav`
 position:fixed;
 position:relative;
+z-index:1000;
 top:0;
 right:0;
 left:0;
@@ -117,7 +80,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:0 3rem;
-z-index:3;
+${'' /* z-index:3; */}
 background:var(--accent);
  
 
