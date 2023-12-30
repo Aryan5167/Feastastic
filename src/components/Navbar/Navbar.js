@@ -24,7 +24,7 @@ function Navbar() {
 
        <ul className={click ? "nav-menu active" : "nav-menu"}>
          <li>
-         <NavLink to="/" >
+         <NavLink to="/home" >
            <span>Home</span>
          </NavLink>
          </li>

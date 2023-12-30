@@ -1,8 +1,10 @@
 import React from 'react'
 import "./NewRecipe.scss"
 import FeaturedRecipesCard from '../FeaturedRecipes/FeaturedRecipesCard'
-import newRecipesData from '../../Assets/NewRecipe'
+// import newRecipesData from '../../Assets/NewRecipe'
+import RecipesData from '../../Assets/RecipesData'
 function NewRecipe() {
+  const newRecipesData=RecipesData.newRecipeData
   return (
     <section className="new-recipe-section">
     <h2 className="new-recipe-section-title">New Kitchen Creations</h2>
@@ -16,6 +18,7 @@ function NewRecipe() {
                chef={recipe.chef}
                likes={recipe.likes}
                isNew
+               id={recipe.id}
             
               />)
            

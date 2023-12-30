@@ -1,7 +1,16 @@
 import React from 'react'
 import './FeaturedRecipesCard.scss'
+// import RecipePopup from '../RecipePopup/RecipePopup';
+import { Link } from 'react-router-dom';
+
 
 function FeaturedRecipesCard(props) {
+  // const [isPopupOpen,setPopupOpen]=React.useState(false)
+
+  // const togglePopup=()=>{
+  //   setPopupOpen(!isPopupOpen)
+  // }
+
   const isNew=props.isNew;
   return (
    <div className="featured-recipe-card">
@@ -14,9 +23,14 @@ function FeaturedRecipesCard(props) {
         <span className="heart-icon">&#x2665;</span>
         <span className="like-count">{props.likes}</span>
       </div>
-      <a href="/">
+
+      {/* <a href="/"> */}
+      <Link to={`/recipes/${props.id}`}>
       <button className="view-recipe-button">View Recipe</button>
-      </a>
+      </Link>
+      
+      {/* {isPopupOpen && <RecipePopup />} */}
+      {/* </a> */}
       
     
     
